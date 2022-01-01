@@ -11894,3 +11894,25 @@ html {
 .text-CR{
   color:  #fff;
 }
+.Xmas-vid{
+  width: auto;
+  height: auto;
+}
+@media (min-width: 800px) {
+  .Xmas-vid {
+    width: 320px;
+    height: 240px;
+  }
+}
+@media (min-width: 1000px) {
+  .Xmas-vid {
+    width: 480px;
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .Xmas-vid {
+    width: 720px;
+    height: 420px;
+  }
+}
