@@ -8,7 +8,24 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
-
+    let portofolio4 = document.getElementById("portfolioModal4");
+    let portofolio5 = document.getElementById("portfolioModal5");
+    let video1; 
+    let video2;
+    
+    portofolio4.addEventListener("click", function(){ 
+    video1 = document.getElementById("VideoCoachella");
+    });
+    portofolio5.addEventListener("click", function(){ 
+    video2 = document.getElementById("VideoPro");
+    });
+    document.getElementById("BtnFermer1").addEventListener("click", mettrePause(video1));
+    document.getElementById("BtnFermer2").addEventListener("click", mettrePause(video2));
+    
+    function mettrePause(prmVideo){
+        console.log("moi");
+        prmVideo.pause();
+    };
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -51,4 +68,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    
+
 });
+
+
+
+
+
